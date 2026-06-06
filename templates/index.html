@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavithra Lokasani | Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Pavithra</div>
+
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+
+        <h1>Pavithra Lokasani</h1>
+
+        <h2>
+            <span id="typing-text"></span>
+        </h2>
+
+        <p>
+            Building innovative web applications and AI-powered solutions.
+        </p>
+
+        <div class="profile-card">
+
+        <div class="profile-item">
+            🎓 B.Tech CSE (AI & ML)
+        </div>
+
+        <div class="profile-item">
+            🏫 Malla Reddy Engineering College for Women
+        </div>
+
+        <div class="profile-item">
+            💻 Full Stack & AI Enthusiast
+        </div>
+
+    </div>
+
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a B.Tech student passionate about Python,
+            Web Development, Artificial Intelligence and
+            building impactful software solutions.
+            I enjoy creating practical applications that
+            solve real-world problems while continuously
+            improving my technical skills.
+        </p>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Flask</div>
+            <div class="skill-card">MongoDB</div>
+            <div class="skill-card">GitHub</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>Medical Diagnosis System</h3>
+                <p>
+                    AI-powered application that predicts diseases
+                    and provides diagnostic insights.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Multilingual Translator</h3>
+                <p>
+                    Web application that translates text
+                    between multiple languages.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Expense Tracker</h3>
+                <p>
+                    Personal finance management application
+                    for tracking expenses.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Salary Prediction System</h3>
+                <p>
+                    Machine Learning application that predicts salary based on user inputs.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Modern Calculator</h3>
+                <p>
+                    Modern calculator with calculation history and responsive design.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+
+    <h2>Certifications</h2>
+
+    <div class="certificate-container">
+
+        <div class="certificate-card">
+            <h3>AIML for Geodata Analysis</h3>
+            <p>ISRO</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Machine Learning</h3>
+            <p>TIMESPRO</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Programming, Data Structures and Algorithms Using Python</h3>
+            <p>NPTEL</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Artificial Intelligence Fundamentals</h3>
+            <p>IBM SkillsBuild</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Networking Essentials</h3>
+            <p>CISCO</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Oracle Cloud Infrastructure 2024 Certified AI Foundations Associate</h3>
+            <p>Oracle</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <form action="/contact" method="POST">
+
+            <input
+                type="name"
+                name="name"
+                placeholder="Enter Your Name"
+                required
+            >
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+            >
+
+            <textarea
+                name="message"
+                rows="5"
+                placeholder="Enter Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <div class="contact-links">
+
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/lokasani-pavithra-23ba59321" target="_blank">
+                    My LinkedIn Profile
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/LokasaniPavithra" target="_blank">
+                    My GitHub Profile
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Pavithra Lokasani. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
